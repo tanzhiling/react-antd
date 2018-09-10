@@ -1,0 +1,64 @@
+.home {
+    &-header {
+        overflow: hidden;
+        &-grid {
+            width: 100%;
+            border-radius: 4px;
+            height: 120px;
+            background: #fff;
+            overflow: hidden;
+            border-radius: 4px;
+            font-size: 14px;
+            position: relative;
+            &-left {
+                height: 120px;
+                line-height: 120px;
+                text-align: center;
+                i {
+                    font-size: 36px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+            &-right {
+                height: 120px;
+                div{
+                    font-size: 50px;
+                    line-height: 80px;
+                    text-align: center;
+                }
+                p{
+                    line-height: 40px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &-tab{
+        background: #fff;
+        margin: 20px 0; 
+        padding: 20px ;
+        &-extra{
+            a{
+                margin-right: 24px;
+            }
+        }
+    }
+    &-content{
+        &-left{
+        }
+        &-right{
+            min-height: 450px;
+            .ant-card-head{
+                position: relative;
+                overflow: hidden;
+                height: 100px;
+            }
+            background: #fff;
+            &-tab{
+                position: absolute;
+                left: 24px;
+                bottom: 15px;
+            }
+        }
+    }
+}
