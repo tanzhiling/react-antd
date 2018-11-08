@@ -4,6 +4,7 @@ import { Form, Icon, Input, Button, Checkbox } from "antd";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { loginAction } from "reducers/login";
+import Cookies from 'js-cookie'
 // import PropTypes from "prop-types";
 import "./index.less";
 const FormItem = Form.Item;
@@ -21,11 +22,13 @@ class Login extends React.Component {
       if (!err) {
         const { username, password } = values;
         this.props.login({ username, password });
+        Cookies.set('JSESSIONID', "admin123456", { expires: 1, path: '/' })
         this.props.history.push("/home");
       }
     });
   };
-  componentDidMount() {}
+  componentDidMount() {
+  }
   render() {
     const { getFieldDecorator } = this.props.form;
     return (

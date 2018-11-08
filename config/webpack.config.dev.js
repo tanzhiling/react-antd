@@ -38,10 +38,10 @@ module.exports = {
       'react-native': 'react-native-web',
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components'),
-      'page': path.resolve(__dirname, '../src/page'),
       'reducers': path.resolve(__dirname, '../src/reducers'),
-      'router': path.resolve(__dirname, '../src/router'),
+      'routers': path.resolve(__dirname, '../src/routers'),
       'utils': path.resolve(__dirname, '../src/utils'),
+      'config':path.resolve(__dirname, '../src/config'),
     },
     plugins: [
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),

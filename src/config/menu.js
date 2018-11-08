@@ -1,27 +1,27 @@
-export const menuList = [{
+export default  [{
     key: 'home',
     path: '/home',
     icon: 'home',
     title: '首页',
 }, {
     key: 'goods',
-    path: '/goods',
+    path: '/goodsManage',
     icon: 'shopping-cart',
     title: '商品管理',
-    children: [{
+    list: [{
             key: 'goods_up',
-            path: '/goods',
+            path: '/goodsManage',
             title: '上架商品',
         },
         {
             key: 'goods_down',
-            path: '/goods',
+            path: '/goodsManage',
             title: '下架商品',
         }
     ]
 }, {
     key: 'order',
-    path: '/order',
+    path: '/orderManage',
     icon: 'switcher',
     title: '订单管理',
 }, {
@@ -39,7 +39,7 @@ export const menuList = [{
     path: '/user',
     icon: 'user',
     title: '个人设置',
-    children: [{
+    list: [{
             key: 'user_center',
             path: '/goods',
             title: '个人中心',
